@@ -292,8 +292,15 @@
         /* Mobile Responsiveness */
         @media (max-width: 768px) {
             .nav-links {
-                flex-direction: column;
-                gap: 10px;
+                display: none; /* Hide navigation links on mobile */
+            }
+            
+            nav {
+                justify-content: center; /* Center the logo on mobile */
+            }
+            
+            .social-links {
+                display: none; /* Hide social links on mobile */
             }
             
             .hero {
@@ -313,12 +320,6 @@
                 grid-template-columns: 1fr;
                 gap: 20px;
                 margin: 40px 0;
-            }
-            
-            .social-links {
-                flex-direction: column;
-                align-items: center;
-                gap: 15px;
             }
         }
 
